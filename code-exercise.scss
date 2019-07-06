@@ -1,0 +1,112 @@
+// variables
+$mm-sample-font-sans-serif: Helvetica, Arial, sans-serif;
+$mm-sample-font-serif:      Georgia, "Times New Roman", Times, serif;
+
+  html {
+    font-size: 62.5%; //why do we set the font size to this value at the html level?
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  body {
+    background-color: #f3f3f3;
+  }
+
+  header {
+    //nav work is already completed, no need to touch this
+    height: 40px;
+    background-color: #002f6c;
+    box-sizing: border-box;
+
+    .container {
+      margin-top: -.6rem;
+    }
+
+    img {
+      width: 16rem;
+    }
+  }
+
+  .container {
+    margin-top: 5rem;
+
+  }
+
+  //Typography and button styles - included are some placeholders for styling
+  //Keep in mind, a component may use one placeholder for a title / etc now but it
+  // may change in 6 months and we want to be able to swap via only CSS changes
+  h1, h2, %h2 {
+    font-family: $mm-sample-font-serif;
+    color: #000;
+  }
+
+  p, h1, h2, %h2 {
+    margin: 0 0 2rem 0;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2, %h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+
+  a {
+    color: #005A9F;
+    &:hover {
+      color: #002f6c;
+    }
+  }
+
+  %eyebrow {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  %subtext {
+    font-size: 1.2rem;
+  }
+
+  .btn-primary {
+    color: #000;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1.2rem 4rem;
+    background-color: #fbff3f;
+    border: 0;
+    border-radius: 0;
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  .mm-card {
+    //feel free to make any comments to explain your thinking
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    background-clip: content-box;
+    .image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .content {
+      padding: 20px;
+      height: 30rem;
+      position: relative;
+      footer{
+        position: absolute;
+        bottom: 5px;
+      }
+    }
+
+  }
+
